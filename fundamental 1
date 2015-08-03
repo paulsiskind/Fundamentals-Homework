@@ -1,0 +1,61 @@
+Define a function called sum that takes two numbers as arguments and returns their sum.
+
+function sum(x,y){
+    return x+y;
+}sum(4,5);
+
+Equal Too
+function equalTo(x,y){
+   if (x === y){
+       return true;
+   }else{
+       return false;
+   }
+}equalTo(8,9)
+
+Total discount
+function discountPercentage(x,y){
+    if ((y>=100) || (y==0)){
+        return ("Warning");
+    }else{
+        return(x*(y*.01));
+    }
+}
+
+discountPercentage(12,90);
+
+
+Even Numbers
+function evenNumbers(evenNum){
+   // var evenNum = prompt("Please enter a random number?");
+    for(var i = 0; i<evenNum; i++){
+        if ((i % 2) == 0){
+            console.log (i);
+        }
+    }
+}
+
+evenNumbers(prompt ("Enter a number?"));
+
+
+function UpperCase( str )
+{
+    var pieces = str.split(" ");
+    for ( var i = 0; i < pieces.length; i++ )
+    {
+        var j = pieces[i].charAt(0).toUpperCase();
+        pieces[i] = j + pieces[i].substr(1);
+    }
+    return pieces.join(" ");
+}UpperCase("Jimmy john loves pizza loop");
+
+function isDivisible(x,y){
+    if ((x%y)==0){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+isDivisible(9,2);
+
